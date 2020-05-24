@@ -1,0 +1,35 @@
+"Games"
+{
+  "left4dead2"
+  {
+    "Signatures"
+    {
+      /* CTerrorPlayer::RoundRespawn */
+      "RoundRespawn"
+      {
+        "library"	"server"
+        "linux"		"@_ZN13CTerrorPlayer12RoundRespawnEv"
+      }
+    
+      /* CTerrorPlayer::BecomeGhost(bool) */
+      "BecomeGhost"
+      {
+        "library"	"server"
+        "linux"		"@_ZN13CTerrorPlayer11BecomeGhostEb"
+      }
+      
+      /* CCSPlayer::State_Transition(CSPlayerState) */
+      "State_Transition"
+      {
+        "library"	"server"
+        "linux"		"@_ZN9CCSPlayer16State_TransitionE13CSPlayerState"
+      }
+      
+      "CTerrorPlayer_OnRevived"
+      {
+        "library"   "server"
+        "linux"     "@_ZN13CTerrorPlayer9OnRevivedEv"
+      }
+    }
+  }
+}

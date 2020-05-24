@@ -1,0 +1,41 @@
+"Games"
+{
+  "left4dead2"
+  {
+    "Signatures"
+    {
+
+      /*
+       * CTerrorPlayer::TakeOverBot(bool)
+      */
+      "TakeOverBot"
+      {
+          "library"  "server"
+          "linux"    "@_ZN13CTerrorPlayer11TakeOverBotEb"
+          "windows"  "\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x53\x56\x8D\x85"
+          /* 55 8B EC 81 EC ? ? ? ? ? ? ? ? ? ? ? ? ? ? 53 56 8D 85 */
+      }
+
+      /*
+       * SurvivorBot::SetHumanSpectator(CTerrorPlayer*)
+      */
+      "SetHumanSpec"
+      {
+        "library" "server"
+        "linux" "@_ZN11SurvivorBot17SetHumanSpectatorEP13CTerrorPlayer"
+        "windows" "\x55\x8B\xEC\x56\x8B\xF1\x83\xBE\x44\x43\x00\x00\x00\x7E\x07\x32\xC0\x5E\x5D\xC2\x04"
+        /* 55 8B EC 56 8B F1 83 BE 44 43 00 00 00 7E 07 32 C0 5E 5D C2 04 */
+      }
+      
+      /* CTerrorPlayer::RoundRespawn */
+      "RoundRespawn"
+      {
+        "library"	"server"
+        "linux"		"@_ZN13CTerrorPlayer12RoundRespawnEv"
+        "windows"	"\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\xC0\x75"
+        /* 56 8B F1 E8 ? ? ? ? E8 ? ? ? ? 84 C0 75	*/
+      }
+
+    }
+  }
+}

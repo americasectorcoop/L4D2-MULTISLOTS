@@ -1,0 +1,19 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			"SetHumanSpec"
+			{
+				"library"	"server"
+				"linux"  	"@_ZN11SurvivorBot17SetHumanSpectatorEP13CTerrorPlayer"
+			}
+			"TakeOverBot"
+			{
+				"library"	"server"
+				"linux"   	"@_ZN13CTerrorPlayer11TakeOverBotEb"
+			}
+		}
+	}
+}
